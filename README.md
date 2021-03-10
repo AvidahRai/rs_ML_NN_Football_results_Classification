@@ -19,7 +19,7 @@ The validation accuracy achieved by EPL NN and SPL NN were <b>50.34%</b> and <b>
 <b>[ 3. Neural Networks - Optimisation.ipynb ](3.%20Neural%20Networks%20-%20Optimisation.ipynb)</b><br/>
 This is my attempt to improve the models. <br/>
 1) First I used ExtraTreeClassifier to visualise the most important features on both datasets. I had spliced both datasets to only contain the 11 most important features. I trained these new datasets using the same configurations/parameter as before. The accuracy improvement was not significant.<br/>
-2) Keeping the no. of features same, I have implemented automatic learning rate reduction using Keras "ReduceLROnPlateau" callback. The validation accuracy improved slightly  <b>53.55%</b> and <b>53.55%</b>.
+2) Keeping the no. of features same, I have implemented automatic learning rate reduction using Keras "ReduceLROnPlateau" callback. The validation accuracy improved slightly  <b>53.55%</b> and <b>52.23%</b>.
 
 <b>Next experiments</b></br>
 1) Different Layer Sizes
