@@ -138,3 +138,22 @@ def cat_3_confusion_matrix( fitted_model, X, y):
     plt.xlabel('Predicted')
     plt.ylabel('Truth')
     plt.show()
+
+'''
+    Plot Figure of Training Accuracy and Loss
+    @history | obj | Tensorflow fit Scalar 
+    @return None
+'''    
+def plot_training_history( fit_history ):
+    plt.subplots(2,2,figsize=(15,5))
+    plt.subplot(1,2,1)
+    plt.plot(fit_history.history['accuracy'], label='Train', color="blue")
+    plt.plot(fit_history.history['val_accuracy'], label='Validation', color="green")
+    plt.legend(loc="upper left")
+    plt.title("Accuracy")
+    plt.subplot(1,2,2)
+    plt.plot(fit_history.history['loss'], label='Train', color="blue")
+    plt.plot(fit_history.history['val_loss'], label='Validation', color="green")
+    plt.legend(loc="upper left")
+    plt.title("Loss")
+    plt.show()
